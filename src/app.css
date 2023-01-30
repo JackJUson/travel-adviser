@@ -26,6 +26,8 @@
   --cardBG: rgb(225, 225, 235);
 }
 
+/* Default Style */
+
 a {
   text-decoration: none;
 }
@@ -78,4 +80,12 @@ li {
 img, video {
   width: 100%;
   height: auto;
+}
+
+input {
+  font-size: 100%;
+}
+
+body {
+  background: var(--bodyColor);
 }
