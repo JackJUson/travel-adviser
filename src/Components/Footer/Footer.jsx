@@ -9,7 +9,7 @@ import { AiOutlineTwitter, AiFillYoutube, AiFillInstagram } from "react-icons/ai
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <footer className="footer">
       <div className="videoDiv">
         <video src={video2} loop autoPlay muted type="video/mp4"></video>
       </div>
@@ -41,7 +41,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam obcaecati magnam earum! Eveniet quas excepturi odit explicabo suscipit, omnis inventore fugiat, harum reiciendis libero cum reprehenderit repellendus rerum neque?
             </div>
 
-            <div className="footerSocials">
+            <div className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
               <AiFillYoutube className="icon" />
               <AiFillInstagram className="icon" />
@@ -50,9 +50,10 @@ const Footer = () => {
           </div>
 
           <div className="footerLinks grid">
+            {/* Link Group One */}
             <div className="linkGroup">
               <span className="groupTitle">
-                Out Agency
+                Our Agency
               </span>
 
               <li className="footerList flex">
@@ -76,10 +77,71 @@ const Footer = () => {
                 Payment
               </li>
             </div>
+
+            {/* Link Group Two */}
+            <div className="linkGroup">
+              <span className="groupTitle">
+                Partners
+              </span>
+
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Bookings
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Rentcars
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                HostelWorld
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Trivago
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                TripAdvisor
+              </li>
+            </div>
+
+            {/* Link Group Three */}
+            <div className="linkGroup">
+              <span className="groupTitle">
+                Last Minute
+              </span>
+
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                London
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                California
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Indonesia
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Europe
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Oceania
+              </li>
+            </div>
+          </div>
+
+          <div className="footerDiv flex">
+            <small>Built by Jackson Jung</small>
+            <small>&copy; Copyright 2023 | All Rights Reserved</small>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
