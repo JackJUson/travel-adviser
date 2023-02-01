@@ -49,10 +49,11 @@ const Footer = () => {
             </div>
 
             <div className="footerParagraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              veniam obcaecati magnam earum! Eveniet quas excepturi odit
-              explicabo suscipit, omnis inventore fugiat, harum reiciendis
-              libero cum reprehenderit repellendus rerum neque?
+            Are you tired of endlessly scrolling through websites, comparing 
+            prices and reading conflicting reviews when planning your next trip? 
+            Look no further than our travel app! Our app is designed to simplify 
+            the travel planning process by offering a one-stop-shop for all your 
+            travel needs!
             </div>
 
             <div className="footerSocials flex">
