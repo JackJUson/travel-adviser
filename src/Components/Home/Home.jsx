@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import video from "../../assets/video.mp4";
 import { GrLocation } from "react-icons/gr";
@@ -9,19 +9,28 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <section className="home">
       <div className="overlay"></div>
       <video src={video} muted autoPlay loop type="video/mp4"></video>
 
       <div className="homeContent container">
-        <div className="textDiv">
+        <div data-aos="fade-up" className="textDiv">
           <span className="smallText">Out Packages</span>
-          <h1 className="homeTitle">Search your Holiday</h1>
+          <h1 data-aos="fade-up" data-aos-delay="300" className="homeTitle">
+            Search your Holiday
+          </h1>
         </div>
 
-        <div className="cardDiv grid">
+        <div data-aos="fade-up" data-aos-delay="500" className="cardDiv grid">
           <div className="destinationInput">
             <label htmlFor="city">Search your destination:</label>
             <div className="input flex">
@@ -51,11 +60,15 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeFooterIcons flex">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="homeFooterIcons flex"
+        >
           <div className="rightIcons">
-            <FiFacebook className="icon"/>
-            <AiOutlineInstagram className="icon"/>
-            <FaTripadvisor className="icon"/>
+            <FiFacebook className="icon" />
+            <AiOutlineInstagram className="icon" />
+            <FaTripadvisor className="icon" />
           </div>
           <div className="leftIcons">
             <BsListTask className="icon" />
