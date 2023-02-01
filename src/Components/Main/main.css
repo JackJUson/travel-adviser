@@ -34,10 +34,11 @@
   position: absolute;
   content: "";
   background: var(--SecondaryColor);
-  height: 5px;
+  border-radius: 3rem;
+  height: 3px;
   width: 120px;
   right: 0;
-  bottom: 5px;
+  bottom: 4px;
   z-index: 1px;
 }
 .main .secContent {
