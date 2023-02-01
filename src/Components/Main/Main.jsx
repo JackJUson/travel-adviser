@@ -1,7 +1,10 @@
 import React from "react";
 import "./main.css";
 import { holidayDestinations } from "../../data/data";
-import { HiOutlineLocationMarker, HiOutlineClipboardCheck } from "react-icons/hi";
+import {
+  HiOutlineLocationMarker,
+  HiOutlineClipboardCheck,
+} from "react-icons/hi";
 
 const Main = () => {
   return (
@@ -19,30 +22,31 @@ const Main = () => {
               </div>
 
               <div className="cardInfo">
-                <h4 className="destTitle">
-                  {data.destTitle}
-                </h4>
-                <span className="contient flex">
+                <h4 className="destTitle">{data.destTitle}</h4>
+                <span className="continent flex">
                   <HiOutlineLocationMarker className="icon" />
                   <span className="name">{data.location}</span>
                 </span>
 
                 <div className="fees flex">
                   <div className="grade">
-                    <span>{data.grade}<small>+1</small></span>
+                    <span>
+                      {data.grade}
+                      <small>+1</small>
+                    </span>
                   </div>
                   <div className="price">
-                    <h5>{data.price}</h5>
+                    <h5>{data.fees}</h5>
                   </div>
-
-                  <div className="desc">
-                    <p>{data.description}</p>
-                  </div>
-
-                  <button className="btn flex">
-                    Details <HiOutlineClipboardCheck className="icon" />
-                  </button>
                 </div>
+
+                <div className="desc">
+                  <p>{data.description}</p>
+                </div>
+
+                <button className="btn flex">
+                  Details <HiOutlineClipboardCheck className="icon" />
+                </button>
               </div>
             </div>
           );
